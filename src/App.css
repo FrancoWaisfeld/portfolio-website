@@ -40,11 +40,6 @@ main {
   text-transform: uppercase;
 }
 
-.center {
-  display: flex;
-  align-items: center;
-}
-
 .link {
   color: var(--clr-primary);
   padding: 0 0 0.3em 0;
@@ -73,7 +68,6 @@ main {
 
 .link--nav {
   color: var(--clr-fg);
-  text-transform: lowercase;
   font-weight: 500;
 }
 
@@ -87,7 +81,6 @@ main {
   padding: 0.8em 1.4em;
   font-weight: 500;
   font-size: 0.9rem;
-  text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
 }
 

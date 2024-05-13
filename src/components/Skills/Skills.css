@@ -1,10 +1,55 @@
-.skills__list {
+/* .skills__list {
   max-width: 450px;
   width: 95%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+} */
+
+.skills__types {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: min-content;
+  grid-template-areas:
+    'backend frontend cloud other'
+    'backend_list frontend_list cloud_list other_list';
+}
+
+.skills__types .title {
+  justify-self: center;
+}
+
+.skills__types .backend {
+  grid-area: backend;
+}
+
+.skills__types .frontend {
+  grid-area: frontend;
+}
+
+.skills__types .cloud {
+  grid-area: cloud;
+}
+
+.skills__types .other {
+  grid-area: other;
+}
+
+.skills__types .backend_list {
+  grid-area: backend_list;
+}
+
+.skills__types .frontend_list {
+  grid-area: frontend_list;
+}
+
+.skills__types .cloud_list {
+  grid-area: cloud_list;
+}
+
+.skills__types .other_list {
+  grid-area: other_list;
 }
 
 .skills__list-item {
