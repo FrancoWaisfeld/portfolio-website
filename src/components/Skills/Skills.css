@@ -1,16 +1,7 @@
-/* .skills__list {
-  max-width: 450px;
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
-
 .skills__types {
+  width: 95%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: min-content;
   grid-template-areas:
     'backend frontend cloud other'
     'backend_list frontend_list cloud_list other_list';
@@ -54,4 +45,17 @@
 
 .skills__list-item {
   margin: 0.5em;
+}
+
+@media screen and (max-width: 800px) {
+  .skills__types {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-areas:
+      'backend frontend'
+      'backend_list frontend_list'
+      'cloud other'
+      'cloud_list other_list';
+  }
 }

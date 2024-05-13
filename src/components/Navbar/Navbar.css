@@ -1,7 +1,9 @@
 .nav__list {
-  margin-right: 1.5em;
+  margin-right: 3rem;
   display: flex;
+  justify-content: flex-end;
 }
+
 .nav__list-item {
   margin-left: 1.5em;
 }
@@ -11,7 +13,7 @@
 }
 
 .nav__theme {
-  margin-top: 0.4em;
+  margin-top: 0.4rem;
 }
 
 @media (max-width: 600px) {
@@ -28,12 +30,12 @@
   }
 
   .nav__list-item {
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
   }
 
   .app .nav__hamburger {
     display: flex;
     z-index: 2;
-    margin-left: 0.8em;
+    margin-left: 0.8rem;
   }
 }
