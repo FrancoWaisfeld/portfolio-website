@@ -1,13 +1,13 @@
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import headshot from '../../assets/headshot.png';
+import resume from '../../assets/FrancoResume2024.pdf';
 import './About.css';
 
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Franco',
   role: 'Full Stack Software Engineer based in San Diego, CA',
-  resume: 'https://example.com',
   social: {
     linkedin: 'https://www.linkedin.com/in/franco-waisfeld/',
     github: 'https://github.com/FrancoWaisfeld',
@@ -15,7 +15,7 @@ const about = {
 };
 
 const About = () => {
-  const { name, role, resume, social } = about;
+  const { name, role, social } = about;
 
   return (
     <div className='about center'>
@@ -48,7 +48,7 @@ const About = () => {
 
       <div className='about__contact center'>
         {resume && (
-          <a href={resume}>
+          <a href={resume} target='_blank' rel='noreferrer'>
             <button type='button' className='btn btn--outline'>
               Resume
             </button>

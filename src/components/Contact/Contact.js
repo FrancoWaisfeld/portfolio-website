@@ -2,6 +2,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailIcon from '@material-ui/icons/Mail';
 import DescriptionIcon from '@material-ui/icons/Description';
+import resume from '../../assets/FrancoResume2024.pdf';
+
 import './Contact.css';
 
 const contact = {
@@ -30,9 +32,9 @@ const Contact = () => {
             <GitHubIcon /> GitHub
           </span>
         </a>
-        <a href='/'>
+        <a href={resume} target='_blank' rel='noreferrer'>
           <span type='button' className='btn btn--outline'>
-            <DescriptionIcon /> Resume NEED TO ADD LINK
+            <DescriptionIcon /> Resume
           </span>
         </a>
       </div>
