@@ -60,6 +60,8 @@ const Projects = () => {
           </ul>
           <a
             href='https://syncosaurus.github.io/case-study'
+            target='_blank'
+            rel='noreferrer'
             className='case_study'
           >
             <button type='button' role='link' className='btn btn--outline'>

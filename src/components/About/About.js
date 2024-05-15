@@ -42,8 +42,14 @@ const About = () => {
         <br />
         <br />
         Recently, I built{' '}
-        <a href='https://syncosaurus.github.io/case-study'>🦖Syncosaurus</a>, an
-        open-source framwork for real-time collaborative web applications.
+        <a
+          href='https://syncosaurus.github.io/case-study'
+          target='_blank'
+          rel='noreferrer'
+        >
+          🦖Syncosaurus
+        </a>
+        , an open-source framwork for real-time collaborative web applications.
       </p>
 
       <div className='about__contact center'>
@@ -60,6 +66,8 @@ const About = () => {
             {social.github && (
               <a
                 href={social.github}
+                target='_blank'
+                rel='noreferrer'
                 aria-label='github'
                 className='link link--icon'
               >
@@ -70,6 +78,8 @@ const About = () => {
             {social.linkedin && (
               <a
                 href={social.linkedin}
+                target='_blank'
+                rel='noreferrer'
                 aria-label='linkedin'
                 className='link link--icon'
               >
