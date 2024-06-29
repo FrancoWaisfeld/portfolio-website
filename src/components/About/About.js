@@ -1,7 +1,7 @@
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import headshot from '../../assets/headshot.png';
-import resume from '../../assets/FrancoResume2024.pdf';
+import resume from '../../assets/Franco waisfeld resume 2024.pdf';
 import './About.css';
 
 const about = {
@@ -33,9 +33,9 @@ const About = () => {
         </h2>
       )}
       <p className='about__desc'>
-        Through my background in marketing and product management I have a deep
-        understanding of the desires of customers and business implications of
-        engineering decisions.
+        Through my background as a Marketing founder I have a deep understanding
+        of the desires of customers and business implications of engineering
+        decisions.
         <br />
         <br />I have experience with JavaScript, Node.js, React, TypeScript,
         Ruby, Go, PostgreSQL, MongoDB, AWS, CloudFlare, and Git / Github.

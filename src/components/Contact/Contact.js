@@ -2,7 +2,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailIcon from '@material-ui/icons/Mail';
 import DescriptionIcon from '@material-ui/icons/Description';
-import resume from '../../assets/FrancoResume2024.pdf';
+import resume from '../../assets/Franco waisfeld resume 2024.pdf';
 
 import './Contact.css';
 

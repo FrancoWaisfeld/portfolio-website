@@ -6,6 +6,8 @@ const skills = {
     'JavaScript',
     'TypeScript',
     'React',
+    'React Native',
+    'Next.js',
     'jQuery',
     'Handlebars.js',
     'Tailwind',
