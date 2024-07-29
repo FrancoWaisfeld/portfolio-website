@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5c59730.css",
-    "main.js": "/static/js/main.2d055eb4.js",
+    "main.css": "/static/css/main.240c9d50.css",
+    "main.js": "/static/js/main.75c23b5e.js",
     "static/media/headshot.png": "/static/media/headshot.79de13ecc31352bfdbe1.png",
+    "static/media/Reveler_app.png": "/static/media/Reveler_app.bf77b1edb5a2028e3468.png",
     "static/media/webhookGravityWell.png": "/static/media/webhookGravityWell.0c6dd6df38af13b375ef.png",
-    "static/media/Franco waisfeld resume 2024.pdf": "/static/media/Franco waisfeld resume 2024.d1eda6ce0b3350010611.pdf",
-    "static/media/TodoList.png": "/static/media/TodoList.6c9128ee86110b3b73fb.png",
+    "static/media/Franco waisfeld resume 2024.pdf": "/static/media/Franco waisfeld resume 2024.265383ee8086e1c201b6.pdf",
     "static/media/shoppingCart.png": "/static/media/shoppingCart.52c4a29ef491771a6345.png",
     "static/media/syncosaurus_logo.0df96dcc.svg": "/static/media/syncosaurus_logo.0df96dcc.01c6fb4e20b099416ecb0b18b85a34d1.svg",
     "index.html": "/index.html",
-    "main.e5c59730.css.map": "/static/css/main.e5c59730.css.map",
-    "main.2d055eb4.js.map": "/static/js/main.2d055eb4.js.map"
+    "main.240c9d50.css.map": "/static/css/main.240c9d50.css.map",
+    "main.75c23b5e.js.map": "/static/js/main.75c23b5e.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5c59730.css",
-    "static/js/main.2d055eb4.js"
+    "static/css/main.240c9d50.css",
+    "static/js/main.75c23b5e.js"
   ]
 }
