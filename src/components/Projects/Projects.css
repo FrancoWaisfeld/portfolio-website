@@ -11,9 +11,15 @@
   border: 1px solid #555;
 }
 
-.syncosaurus .title {
+.syncosaurus .title,
+.reveler .title {
   display: flex;
   justify-content: center;
+}
+
+.features_title {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .projects__syncosaurus {
@@ -27,7 +33,30 @@
     'logo case_study';
 }
 
+.projects__reveler {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1.5fr 4fr;
+  grid-template-areas:
+    'description'
+    'features_group'
+    'logo';
+}
+
+.projects__reveler .features_group,
+.projects__reveler .description {
+  justify-self: center;
+  align-self: center;
+}
+
 .projects__syncosaurus .logo {
+  padding-right: 1rem;
+  grid-area: logo;
+  max-width: 100%;
+  height: auto;
+}
+
+.projects__reveler .logo {
   padding-right: 1rem;
   grid-area: logo;
   max-width: 100%;
@@ -62,6 +91,16 @@
       'features_title'
       'features'
       'case_study';
+  }
+
+  .projects__reveler {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr 1fr;
+    grid-template-areas:
+      'logo'
+      'description'
+      'features_group';
   }
 
   .projects__syncosaurus .logo {

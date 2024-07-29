@@ -33,23 +33,21 @@ const About = () => {
         </h2>
       )}
       <p className='about__desc'>
-        Through my background as a Marketing founder I have a deep understanding
-        of the desires of customers and business implications of engineering
-        decisions.
-        <br />
-        <br />I have experience with JavaScript, Node.js, React, TypeScript,
-        Ruby, Go, PostgreSQL, MongoDB, AWS, CloudFlare, and Git / Github.
+        Combining my experience as a Marketing Founder and Full Stack Software
+        Engineer specializing in the Node.js ecosystem, TypeScript, Express, and
+        React, I bring a unique perspective to tech companies.
         <br />
         <br />
-        Recently, I built{' '}
-        <a
-          href='https://syncosaurus.github.io/case-study'
-          target='_blank'
-          rel='noreferrer'
-        >
-          🦖Syncosaurus
-        </a>
-        , an open-source framwork for real-time collaborative web applications.
+        I excel at creating products that drive customer retention while
+        navigating the balance between business priorities and engineering
+        decisions. My background enables me to bridge the gap between technical
+        requirements and customer demands, resulting in scalable applications
+        that users want.
+        <br />
+        <br />I have experience with JavaScript, Node.js, Next.js, React,
+        TypeScript, Expres.js, Ruby, Go, PostgreSQL, MongoDB, AWS, CloudFlare,
+        and Git / Github.
+        <br />
       </p>
 
       <div className='about__contact center'>
