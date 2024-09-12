@@ -1,0 +1,19 @@
+.link-button {
+  display: inline-block;
+  background-color: var(--light-blue);
+  padding: 1.25rem 1rem;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.circular-button {
+  display: flex;
+  background-color: var(--light-blue);
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  height: 3.75rem;
+  width: 3.75rem;
+  padding: 1.25rem;
+  font-size: 1.25rem;
+}

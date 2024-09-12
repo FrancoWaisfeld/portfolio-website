@@ -1,0 +1,48 @@
+.hero-section {
+  margin: 5rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 4rem;
+}
+
+.left-hero-section {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.headshot {
+  grid-column: 2;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.headshot-container {
+  background-color: var(--white);
+  border-radius: 1rem;
+}
+
+.link-buttons {
+  display: flex;
+  grid-area: "link-buttons";
+  margin-top: 32px;
+}
+
+.link-buttons div {
+  margin: 0 1rem;
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--white);
+}
+
+.introduction {
+  margin-bottom: 1rem;
+}

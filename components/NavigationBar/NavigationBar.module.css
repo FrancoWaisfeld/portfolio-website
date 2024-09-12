@@ -1,0 +1,26 @@
+.name {
+  font-family: "Manrope", sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+  color: var(--light-grey);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation-links {
+  padding: 0rem 1rem;
+  color: var(--light-grey);
+  font-weight: 300;
+  font-size: 1.25rem;
+}
