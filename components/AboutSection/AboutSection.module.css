@@ -1,5 +1,6 @@
 .about-container {
-  margin: 5rem 6rem;
+  margin: 5rem auto;
+  max-width: 1920px;
 }
 
 .about-container h2,

@@ -5,6 +5,7 @@
   text-align: center;
   border-radius: 100px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .icon-button {

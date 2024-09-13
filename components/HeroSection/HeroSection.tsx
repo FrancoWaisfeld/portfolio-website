@@ -7,8 +7,8 @@ import HeadShot from "../../public/headshot.png";
 const HeroSection = () => {
   return (
     <div className={Styles["hero-section"]}>
-      <div className={Styles["left-hero-section"]}>
-        <h1 className={Styles.introduction}>
+      <div className={Styles["hero-text"]}>
+        <h1>
           {"Hi, I'm"}
           <br />
           {"Franco"}
@@ -20,12 +20,12 @@ const HeroSection = () => {
           the
           <strong className={Styles.bold}> Node.js and React ecosystems</strong>
         </p>
-        <div className={Styles["link-buttons"]}>
-          <LinkButton text="CONTACT ME" />
-          <LinkButton text="RESUME" />
-          <LinkButton icon={FaGithub} />
-          <LinkButton icon={FaLinkedin} />
-        </div>
+      </div>
+      <div className={Styles["link-buttons"]}>
+        <LinkButton text="CONTACT ME" />
+        <LinkButton text="RESUME" />
+        <LinkButton icon={FaGithub} />
+        <LinkButton icon={FaLinkedin} />
       </div>
       <div className={Styles["headshot-container"]}>
         <Image

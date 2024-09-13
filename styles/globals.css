@@ -39,3 +39,9 @@ p {
   font-size: 1.25rem;
   color: var(--light-grey);
 }
+
+/* @media screen and (max-width: 1064px) {
+  body {
+    font-size: 12px;
+  }
+} */

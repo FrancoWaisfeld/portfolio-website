@@ -1,5 +1,6 @@
 .contact-container {
-  margin: 80px 96px;
+  margin: 5rem auto;
+  max-width: 1920px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -30,4 +31,21 @@
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
+}
+
+@media screen and (max-width: 1064px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+  }
+
+  .contact-content-container {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .contact-container form {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
