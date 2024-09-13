@@ -1,0 +1,33 @@
+.contact-container {
+  margin: 80px 96px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 5rem;
+}
+
+.contact-container form {
+  grid-column: 2 3;
+}
+
+.contact-content-container {
+  grid-column: 1 2;
+}
+
+.header,
+.description,
+.email {
+  margin: 1rem 0;
+}
+
+.email strong {
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: var(--light-blue);
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}

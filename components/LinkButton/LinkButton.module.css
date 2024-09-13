@@ -1,12 +1,13 @@
-.link-button {
+.text-button {
   display: inline-block;
   background-color: var(--light-blue);
   padding: 1.25rem 1rem;
   text-align: center;
   border-radius: 100px;
+  cursor: pointer;
 }
 
-.circular-button {
+.icon-button {
   display: flex;
   background-color: var(--light-blue);
   align-items: center;
@@ -15,5 +16,20 @@
   height: 3.75rem;
   width: 3.75rem;
   padding: 1.25rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.icon-button .link {
+  height: 2rem;
+  width: 2rem;
+}
+
+.text-button .link svg {
+  margin-left: 0.5rem;
+  font-size: 1rem;
 }

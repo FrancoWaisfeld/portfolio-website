@@ -4,19 +4,23 @@ import Styles from "./LinkButton.module.css";
 interface LinkButtonProps {
   text?: string;
   icon?: IconType;
+  fullWidth?: boolean;
 }
 
-export default function LinkButton({ text, icon: Icon }: LinkButtonProps) {
+const LinkButton = ({ text, icon: Icon, fullWidth }: LinkButtonProps) => {
   const isIconOnly: boolean = !text && !!Icon;
+  const buttonClassName: string = `${
+    isIconOnly ? Styles["icon-button"] : Styles["text-button"]
+  } ${fullWidth ? Styles["full-width"] : ""}`;
 
   return (
-    <div
-      className={isIconOnly ? Styles["circular-button"] : Styles["link-button"]}
-    >
+    <div className={buttonClassName}>
       <a className={Styles.link}>
         {text && text}
         {Icon && <Icon />}
       </a>
     </div>
   );
-}
+};
+
+export default LinkButton;

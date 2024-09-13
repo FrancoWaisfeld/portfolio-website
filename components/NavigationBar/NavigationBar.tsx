@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Styles from "./NavigationBar.module.css";
 
-export default function NavigationBar() {
+const NavigationBar = () => {
   return (
     <header className={Styles.header}>
       <Link href="/">
@@ -23,4 +23,6 @@ export default function NavigationBar() {
       </nav>
     </header>
   );
-}
+};
+
+export default NavigationBar;

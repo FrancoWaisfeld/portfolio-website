@@ -10,6 +10,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--dark-blue);
 }
 
 .navigation {

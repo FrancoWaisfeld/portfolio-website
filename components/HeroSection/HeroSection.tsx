@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import HeadShot from "../../public/headshot.png";
 
-export default function HeroSection() {
+const HeroSection = () => {
   return (
     <div className={Styles["hero-section"]}>
       <div className={Styles["left-hero-section"]}>
@@ -36,4 +36,6 @@ export default function HeroSection() {
       </div>
     </div>
   );
-}
+};
+
+export default HeroSection;
