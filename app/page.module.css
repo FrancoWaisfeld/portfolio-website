@@ -1,9 +1,11 @@
 .main {
-  margin: 5rem 6rem;
+  padding: 5rem 6rem;
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1064px) {
   .main {
-    margin: 4rem 1rem;
+    padding: 4rem 0.75rem;
   }
 }

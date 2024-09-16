@@ -9,9 +9,12 @@
   --light-grey: #c7c7c7;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
   color: var(--white);
   background-color: var(--dark-blue);
 }
@@ -40,8 +43,8 @@ p {
   color: var(--light-grey);
 }
 
-/* @media screen and (max-width: 1064px) {
-  body {
+@media screen and (max-width: 1064px) {
+  html {
     font-size: 12px;
   }
-} */
+}

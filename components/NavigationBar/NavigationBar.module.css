@@ -3,6 +3,7 @@
   font-weight: lighter;
   font-size: 2rem;
   color: var(--light-grey);
+  text-wrap: nowrap;
 }
 
 .header {
@@ -28,4 +29,59 @@
   color: var(--light-grey);
   font-weight: 300;
   font-size: 1.25rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1064px) {
+  .header {
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-areas:
+      "name hamburger"
+      "links links";
+  }
+
+  .name {
+    grid-area: name;
+  }
+
+  .header a {
+    align-self: flex-start;
+    justify-self: center;
+  }
+
+  .header nav {
+    grid-area: links;
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+  }
+
+  .navigation.active {
+    display: flex;
+    text-align: center;
+  }
+
+  .navigation-links {
+    color: var(--white);
+    background-color: var(--light-blue);
+    border-radius: 100px;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .hamburger {
+    font-size: 3rem;
+    grid-area: hamburger;
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+  }
 }
