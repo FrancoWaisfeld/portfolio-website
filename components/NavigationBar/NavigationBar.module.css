@@ -4,6 +4,7 @@
   font-size: 2rem;
   color: var(--light-grey);
   text-wrap: nowrap;
+  cursor: pointer;
 }
 
 .header {
@@ -29,6 +30,7 @@
   color: var(--light-grey);
   font-weight: 300;
   font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -75,6 +77,7 @@
     margin: 0.5rem 0;
     font-size: 1.5rem;
     padding: 0.5rem 0;
+    width: 100%;
   }
 
   .hamburger {

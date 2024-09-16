@@ -22,10 +22,22 @@ const HeroSection = () => {
         </p>
       </div>
       <div className={Styles["link-buttons"]}>
-        <LinkButton text="CONTACT ME" />
-        <LinkButton text="RESUME" />
-        <LinkButton icon={FaGithub} />
-        <LinkButton icon={FaLinkedin} />
+        <LinkButton href="#contact" text="CONTACT ME" />
+        <LinkButton
+          href="/franco_waisfeld_resume_2024.pdf"
+          target="_blank"
+          text="RESUME"
+        />
+        <LinkButton
+          href="https://www.linkedin.com/in/franco-waisfeld/"
+          icon={FaLinkedin}
+          target="_blank"
+        />
+        <LinkButton
+          href="https://github.com/FrancoWaisfeld"
+          icon={FaGithub}
+          target="_blank"
+        />
       </div>
       <div className={Styles["headshot-container"]}>
         <Image

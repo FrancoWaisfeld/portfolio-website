@@ -28,15 +28,15 @@ const NavigationBar = () => {
 
       <nav>
         <ul className={`${Styles.navigation} ${isOpen ? Styles.active : ""}`}>
-          <li className={Styles["navigation-links"]}>
-            <Link href="/">About</Link>
-          </li>
-          <li className={Styles["navigation-links"]}>
-            <Link href="/projects">Projects</Link>
-          </li>
-          <li className={Styles["navigation-links"]}>
-            <Link href="#contact">Contact</Link>
-          </li>
+          <Link className={Styles["navigation-links"]} href="/">
+            <li>About</li>
+          </Link>
+          <Link className={Styles["navigation-links"]} href="/projects">
+            <li>Projects</li>
+          </Link>
+          <Link className={Styles["navigation-links"]} href="#contact">
+            <li>Contact</li>
+          </Link>
         </ul>
       </nav>
     </header>

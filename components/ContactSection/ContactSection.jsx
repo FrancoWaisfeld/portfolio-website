@@ -7,7 +7,9 @@ const ContactSection = () => {
   return (
     <div className={Styles["contact-container"]}>
       <div className={Styles["contact-content-container"]}>
-        <h2 className={Styles.header}>Contact</h2>
+        <h2 id="contact" className={Styles.header}>
+          Contact
+        </h2>
         <p className={Styles.description}>
           Seeking opportunities with a startup that values execution, results,
           and real problem-solving.
@@ -16,9 +18,21 @@ const ContactSection = () => {
           Email: <strong>francowaisfeld@gmail.com</strong>
         </p>
         <div className={Styles["buttons-container"]}>
-          <LinkButton text="RESUME" />
-          <LinkButton icon={FaLinkedin} />
-          <LinkButton icon={FaGithub} />
+          <LinkButton
+            href="/franco_waisfeld_resume_2024.pdf"
+            target="_blank"
+            text="RESUME"
+          />
+          <LinkButton
+            href="https://www.linkedin.com/in/franco-waisfeld/"
+            target="_blank"
+            icon={FaLinkedin}
+          />
+          <LinkButton
+            href="https://github.com/FrancoWaisfeld"
+            target="_blank"
+            icon={FaGithub}
+          />
         </div>
       </div>
       <ContactForm />

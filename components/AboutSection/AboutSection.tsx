@@ -7,6 +7,7 @@ const AboutSection = () => {
     <div className={Styles["about-container"]}>
       <h2>About Me</h2>
       <LinkButton
+        href="/projects"
         text="FEATURED PROJECTS"
         icon={BsArrowUpRightCircleFill}
         fullWidth={true}
