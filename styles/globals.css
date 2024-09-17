@@ -20,6 +20,12 @@ body {
   background-color: var(--dark-blue);
 }
 
+main {
+  padding: 5rem 6rem;
+  height: 100%;
+  width: 100%;
+}
+
 h1,
 h2,
 h3 {
@@ -47,5 +53,9 @@ p {
 @media screen and (max-width: 1064px) {
   html {
     font-size: 12px;
+  }
+
+  main {
+    padding: 4rem 0.75rem;
   }
 }
