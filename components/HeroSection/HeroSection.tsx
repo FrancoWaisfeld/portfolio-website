@@ -44,6 +44,7 @@ const HeroSection = () => {
           className={Styles.headshot}
           src={HeadShot}
           alt="Franco Waisfeld"
+          priority={true}
         />
       </div>
     </div>
