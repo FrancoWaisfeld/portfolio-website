@@ -16,6 +16,10 @@ const NavigationBar = () => {
     setIsOpen(false);
   };
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className={Styles.header} onMouseLeave={handleMouseLeave}>
       <Link href="/">
@@ -28,13 +32,25 @@ const NavigationBar = () => {
 
       <nav>
         <ul className={`${Styles.navigation} ${isOpen ? Styles.active : ""}`}>
-          <Link className={Styles["navigation-links"]} href="/">
+          <Link
+            className={Styles["navigation-links"]}
+            href="/"
+            onClick={handleLinkClick}
+          >
             <li>About</li>
           </Link>
-          <Link className={Styles["navigation-links"]} href="/projects">
+          <Link
+            className={Styles["navigation-links"]}
+            href="/projects"
+            onClick={handleLinkClick}
+          >
             <li>Projects</li>
           </Link>
-          <Link className={Styles["navigation-links"]} href="#contact">
+          <Link
+            className={Styles["navigation-links"]}
+            href="#contact"
+            onClick={handleLinkClick}
+          >
             <li>Contact</li>
           </Link>
         </ul>
