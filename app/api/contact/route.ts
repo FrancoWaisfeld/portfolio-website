@@ -1,6 +1,7 @@
 // app/api/contact/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import formData from "form-data";
+import Mailgun from "mailgun.js";
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
   const {
@@ -11,25 +12,18 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   }: { name: string; email: string; subject: string; message: string } =
     await req.json();
 
-  console.log(process.env.EMAIL_SENDER_USER);
-  console.log(process.env.EMAIL_SENDER_PASS);
-  console.log(process.env.EMAIL_RECEIVER_USER);
-
-  // Configure Nodemailer
-  const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com", // SMTP server
-    port: 587, // port for SMTP server
-    auth: {
-      user: process.env.EMAIL_SENDER_USER as string, // Username for email being used to send
-      pass: process.env.EMAIL_SENDER_PASS as string, // Password for email being used to send
-    },
+  // Configure Mailgun
+  const mailgun = new Mailgun(formData);
+  const mg = mailgun.client({
+    username: "api",
+    key: process.env.MAILGUN_API_KEY as string,
   });
 
   try {
-    await transporter.sendMail({
-      from: process.env.EMAIL_SENDER_USER as string, // Username for email being used to send
-      to: process.env.EMAIL_RECEIVER_USER as string, // Username for email being used to receive
-      subject: `New message from ${name}: ${subject}`,
+    await mg.messages.create(process.env.MAILGUN_DOMAIN as string, {
+      from: process.env.EMAIL_SENDER_USER as string,
+      to: [process.env.EMAIL_RECEIVER_USER as string],
+      subject: `francowaisfeld.com Contact Form submission`,
       text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`,
     });
 
