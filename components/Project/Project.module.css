@@ -107,6 +107,7 @@
       "project-info"
       "links";
     grid-template-columns: 1fr;
+    margin: 4rem 0;
   }
 
   .project-description ul {
@@ -115,5 +116,6 @@
 
   .image-container {
     max-height: 100%;
+    padding: 5rem 1rem 2rem 1rem;
   }
 }
