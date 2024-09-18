@@ -1,14 +1,6 @@
-import { IconType } from "react-icons";
 import Link from "next/link";
 import Styles from "./LinkButton.module.css";
-
-interface LinkButtonProps {
-  href: string;
-  text?: string;
-  icon?: IconType;
-  fullWidth?: boolean;
-  target?: string;
-}
+import LinkButtonProps from "@/types/LinkButtonProps";
 
 const LinkButton = ({
   href,

@@ -1,4 +1,119 @@
+.project-container {
+  display: grid;
+  grid-template-areas:
+    "image project-description"
+    "image project-info";
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  margin: 5rem 0;
+}
+
+.project-description,
+.project-info {
+  margin: 1rem 0;
+}
+
+.project-description {
+  grid-area: project-description;
+  align-self: end;
+}
+
+.image-container {
+  grid-area: image;
+  background-color: var(--dark-blue);
+  padding: 6rem 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
 .image-container img {
   width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: var(--light-grey);
+}
+
+.tag-container {
+  position: absolute;
+  top: 1rem;
+  color: var(--dark-blue);
+  background-color: var(--light-grey);
+  width: min-content;
+  text-wrap: nowrap;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border-radius: 100px;
+}
+
+.project-description h2 {
+  font-size: 2rem;
+  line-height: 150%;
+}
+
+.project-description ul {
+  color: var(--light-grey);
+  list-style: disc;
+}
+
+.project-description li {
+  line-height: 150%;
+  margin: 0.5rem 0;
+}
+
+.project-info {
+  grid-area: project-info;
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.date,
+.role,
+.skills {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 3rem;
+}
+
+.date p,
+.role p,
+.skills p {
+  font-size: 1rem;
+}
+
+.links {
+  margin-top: 1rem;
+}
+
+.links a {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+  .project-container {
+    grid-template-areas:
+      "image"
+      "project-description"
+      "project-info"
+      "links";
+    grid-template-columns: 1fr;
+  }
+
+  .project-description ul {
+    margin-left: 1rem;
+  }
+
+  .image-container {
+    max-height: 100%;
+  }
 }
