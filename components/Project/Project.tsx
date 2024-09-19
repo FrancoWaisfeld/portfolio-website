@@ -1,5 +1,6 @@
 import Styles from "./Project.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import FullWidthLine from "../FullWidthLine/FullWidthLine";
 import { FaGithub } from "react-icons/fa";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
@@ -56,14 +57,14 @@ const Project = ({
         <FullWidthLine />
         <div className={Styles.links}>
           {caseStudyURL && (
-            <a href={caseStudyURL}>
+            <Link href={caseStudyURL} target="_blank">
               READ CASE STUDY <BsArrowUpRightCircleFill />
-            </a>
+            </Link>
           )}
           {gitHubURL && (
-            <a href={gitHubURL}>
+            <Link href={gitHubURL} target="_blank">
               SEE ON GITHUB <FaGithub />
-            </a>
+            </Link>
           )}
         </div>
       </div>

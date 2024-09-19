@@ -72,7 +72,7 @@ const projects: ProjectProps[] = [
     role: "Full Stack Engineer",
     skills: ["React", "Express.js", "MongoDB"],
     tag: "Project",
-    gitHubURL: "https://github.com/Team2LS/WebhookGravityWell",
+    gitHubURL: "https://github.com/FrancoWaisfeld/shoppping-cart",
   },
 ];
 
