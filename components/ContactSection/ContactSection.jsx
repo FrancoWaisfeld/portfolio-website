@@ -19,7 +19,7 @@ const ContactSection = () => {
         </p>
         <div className={Styles["buttons-container"]}>
           <LinkButton
-            href="/franco_waisfeld_resume_2024.pdf"
+            href="/Franco_Waisfeld_Resume.pdf"
             target="_blank"
             text="RESUME"
           />

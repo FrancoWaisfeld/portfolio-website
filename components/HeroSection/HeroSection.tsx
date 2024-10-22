@@ -24,7 +24,7 @@ const HeroSection = () => {
       <div className={Styles["link-buttons"]}>
         <LinkButton href="#contact" text="CONTACT ME" />
         <LinkButton
-          href="/franco_waisfeld_resume_2024.pdf"
+          href="/Franco_Waisfeld_Resume.pdf"
           target="_blank"
           text="RESUME"
         />
